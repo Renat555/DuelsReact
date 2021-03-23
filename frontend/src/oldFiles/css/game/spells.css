@@ -1,0 +1,13 @@
+.earthshild {
+  background-image: url(../../img/game/battlefield/mountain.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.watersphere {
+  background-image: url(../../img/game/battlefield/ice.jpg);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,126 @@
+body {
+  background-image: url(../../img/createHero/fonChoose.jpg);
+  background-size: cover;
+}
+
+.workArea {
+  color: #ebdb83;
+}
+
+#name {
+  width: 250px;
+}
+
+.wrapperElement {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  width: 230px;
+  height: 230px;
+  color: white;
+  vertical-align: middle;
+  background: #3b3b3b;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px #ba9e00, 0px -4px 0px #ba9e00, 4px 0px 0px #ba9e00,
+    -4px 0px 0px #ba9e00;
+}
+
+.wrapperForm {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  width: 200px;
+  height: 200px;
+  color: white;
+  vertical-align: middle;
+  background: #3b3b3b;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px #ba9e00, 0px -4px 0px #ba9e00, 4px 0px 0px #ba9e00,
+    -4px 0px 0px #ba9e00;
+}
+
+.text {
+  margin-top: 1%;
+}
+.picture {
+  height: 70%;
+  margin-top: 5%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#fire {
+  background-image: url(../../img/createHero//fire.png);
+}
+#water {
+  background-image: url(../../img/createHero/water.png);
+}
+#air {
+  background-image: url(../../img/createHero/air.png);
+}
+#earth {
+  background-image: url(../../img/createHero/earth.png);
+}
+#life {
+  background-image: url(../../img/createHero/life.png);
+}
+#death {
+  background-image: url(../../img/createHero/skull.png);
+}
+#spear {
+  background-image: url(../../img/createHero/spear.png);
+}
+#shild {
+  background-image: url(../../img/createHero/shild.png);
+}
+#crown {
+  background-image: url(../../img/createHero/crown.png);
+}
+#source {
+  background-image: url(../../img/createHero/source.png);
+}
+#sphere {
+  background-image: url(../../img/createHero/sphere.png);
+}
+#stamp {
+  background-image: url(../../img/createHero/stamp.png);
+}
+#key {
+  background-image: url(../../img/createHero/key.png);
+}
+#flow {
+  background-image: url(../../img/createHero/flow.png);
+}
+#power {
+  background-image: url(../../img/createHero/power.png);
+}
+
+.highlight {
+  background: #595959;
+  box-shadow: 0px 3px 0px #e3c100, 0px -3px 0px #e3c100, 3px 0px 0px #e3c100,
+    -3px 0px 0px #e3c100;
+}
+
+.startGame {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  outline: none;
+  padding: 0.5em 2em;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.7s;
+  margin-bottom: 10px;
+}
+.startGame:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.startGame:active {
+  background: white;
+}

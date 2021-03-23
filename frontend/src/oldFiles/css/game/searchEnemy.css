@@ -1,0 +1,35 @@
+.backdrop {
+  z-index: 999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/game/fonChoose.jpg);
+  background-size: cover;
+}
+.searchBackground {
+  height: 100%;
+}
+.searchBackgroundTwo {
+  text-align: center;
+}
+.userSpin {
+  font-size: 1.3rem;
+}
+.search {
+  display: inline;
+  vertical-align: middle;
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .userSpin {
+    font-size: 1rem;
+  }
+  .search {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+  }
+}

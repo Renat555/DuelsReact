@@ -1,0 +1,20 @@
+
+body {
+  background-image: url(../../img/createHero/fonChoose.jpg);
+}
+
+.container {
+  color: white;
+}
+
+h1, h2, h3 {
+  color: white;
+}
+
+.content {
+  color: #fff3db;
+  font-size: 1.5rem;
+  background-color: black;
+  border: 2px solid #d18d04;
+  border-radius: 15px;
+}
