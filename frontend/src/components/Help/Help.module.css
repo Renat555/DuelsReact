@@ -1,0 +1,70 @@
+.help {
+  background-image: url(../../img/createHero/fon.jpg);
+  background-size: contain;
+}
+
+.main {
+  display: grid;
+
+  grid-template-columns: 1200px;
+
+  justify-content: center;
+}
+
+.content a {
+  background-color: #d8c244;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+.headerCenter {
+  color: white;
+  text-align: center;
+}
+
+.content {
+  font-size: 1.5rem;
+  background-color: black;
+  color: #e4d7bd;
+  margin-top: 1%;
+  padding: 15px;
+  border: 2px solid rgb(255, 166, 0);
+  border-radius: 15px;
+}
+
+@media (max-width: 1920px) {
+  .main {
+    grid-template-columns: 1100px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .main {
+    grid-template-columns: 900px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 600px;
+  }
+  .content {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

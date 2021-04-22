@@ -1,0 +1,72 @@
+.fon {
+  background-image: url(../../img/createHero/fon.jpg);
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.header {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  grid-template-areas: ". reference mainTitle .";
+}
+
+.mainTitle {
+  grid-area: mainTitle;
+}
+
+.inputName {
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  color: #ebdb83;
+  text-align: center;
+}
+
+.referenceContainer {
+  grid-area: reference;
+}
+
+.reference {
+  padding: 10px 15px 10px 15px;
+  font-size: 1.5rem;
+  background-color: #d8c244;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 3%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1366px) {
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "reference mainTitle .";
+  }
+}
+
+@media (max-width: 880px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "mainTitle"
+      "reference";
+  }
+  .reference {
+    padding: 5px;
+  }
+}

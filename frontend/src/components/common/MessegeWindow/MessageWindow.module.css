@@ -1,0 +1,39 @@
+.fon {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.messageFon {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.messageContainer {
+  background-color: rgb(255, 204, 138);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px rgb(228, 157, 25) solid;
+}
+
+.message {
+  padding: 20px;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.closeButton {
+  margin: 20px;
+  font-size: 1.5rem;
+}

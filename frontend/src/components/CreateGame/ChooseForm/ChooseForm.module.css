@@ -1,0 +1,81 @@
+.forms {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "spear shild crown source sphere stamp"
+    "key key flow flow power power";
+}
+
+.spear {
+  grid-area: spear;
+}
+
+.shild {
+  grid-area: shild;
+}
+
+.crown {
+  grid-area: crown;
+}
+
+.source {
+  grid-area: source;
+}
+
+.sphere {
+  grid-area: sphere;
+}
+
+.stamp {
+  grid-area: stamp;
+}
+
+.key {
+  grid-area: key;
+}
+
+.flow {
+  grid-area: flow;
+}
+
+.power {
+  grid-area: power;
+}
+
+@media (max-width: 1366px) {
+  .forms {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "spear spear shild shild crown crown source source"
+      ". sphere sphere stamp stamp key key ."
+      ". . flow flow power power . .";
+  }
+}
+
+@media (max-width: 1024px) {
+  .forms {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "spear shild crown"
+      "source sphere stamp"
+      "key flow power";
+  }
+}
+
+@media (max-width: 690px) {
+  .forms {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "spear shild"
+      "crown source"
+      "sphere stamp"
+      "key flow"
+      "power power";
+  }
+}

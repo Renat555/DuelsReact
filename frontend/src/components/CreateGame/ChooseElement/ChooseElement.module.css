@@ -1,0 +1,59 @@
+.elements {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 10px;
+  grid-template-areas: "fire water earth air life death";
+}
+
+.fire {
+  grid-area: fire;
+}
+
+.water {
+  grid-area: water;
+}
+
+.earth {
+  grid-area: earth;
+}
+
+.air {
+  grid-area: air;
+}
+
+.life {
+  grid-area: life;
+}
+
+.death {
+  grid-area: death;
+}
+
+@media (max-width: 1366px) {
+  .elements {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "fire water earth air"
+      ". life death .";
+  }
+}
+
+@media (max-width: 1024px) {
+  .elements {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "fire water earth"
+      "air life death";
+  }
+}
+
+@media (max-width: 768px) {
+  .elements {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "fire water"
+      "earth air"
+      "life death";
+  }
+}
