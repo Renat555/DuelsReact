@@ -6,7 +6,8 @@ const GlassButtonStartGameWithComp = (props) => {
       onClick={() => {
         if (props.choosenElements.length < 3) {
           props.isElementsEnoughToggle(false);
-          return;
+        } else if (props.choosenForms.length < 5) {
+          props.isFormsEnoughToggle(false);
         }
       }}
     >

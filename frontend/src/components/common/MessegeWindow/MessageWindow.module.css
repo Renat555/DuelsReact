@@ -37,3 +37,25 @@
   margin: 20px;
   font-size: 1.5rem;
 }
+
+@media (max-width: 1366px) {
+  .message {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+  .closeButton {
+    margin: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .message {
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+  .closeButton {
+    margin: 10px;
+    font-size: 1rem;
+  }
+}
