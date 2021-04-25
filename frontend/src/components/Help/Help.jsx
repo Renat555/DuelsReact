@@ -1,11 +1,20 @@
 import styles from "./Help.module.css";
+import { useHistory } from "react-router-dom";
 
 const Help = () => {
+  const history = useHistory();
+
+  function goToCreateGame() {
+    history.push("/");
+  }
+
   return (
     <div className={styles.help}>
       <div className={styles.main}>
         <div className={styles.content}>
-          <a href="/create">Создание героя</a>
+          <div className={styles.buttonToCreateGame} onClick={goToCreateGame}>
+            Создание героя
+          </div>
           <h2 className={styles.headerCenter}>Типы заклинаний</h2>
           <p>
             <b>Прямой урон</b> - атакующее заклинание, наносит непосредственный

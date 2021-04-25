@@ -11,14 +11,14 @@
   justify-content: center;
 }
 
-.content a {
+.buttonToCreateGame {
   background-color: #d8c244;
   padding: 10px;
   border-radius: 5px;
-  text-decoration: none;
   color: black;
   display: block;
   text-align: center;
+  cursor: pointer;
 }
 
 .headerCenter {
