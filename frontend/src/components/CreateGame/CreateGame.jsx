@@ -4,23 +4,31 @@ import styles from "./CreateGame.module.css";
 import GlassButtonStartGameWithCompContainer from "./GlassButtonStartGameWithComp/GlassButtonStartGameWithCompContainer";
 import GlassButtonStartGameWithHumanContainer from "./GlassButtonStartGameWithHuman/GlassButtonStartGameWithHumanContainer";
 import MessageWindowStartGameContainer from "./MessageWindowStartGame/MessageWindowStartGameContainer";
+import { useHistory } from "react-router-dom";
+import InputNameContainer from "./InputName/InputNameContainer";
 
 const CreateGame = (props) => {
+  const history = useHistory();
+
+  function goToHelp() {
+    history.push("/help");
+  }
+
   return (
     <div className={styles.fon}>
       <MessageWindowStartGameContainer />
       <div className={styles.header}>
         <div className={styles.referenceContainer}>
-          <a className={styles.reference} href="/help">
+          <div className={styles.buttonToHelp} onClick={goToHelp}>
             Описание заклинаний
-          </a>
+          </div>
         </div>
         <div className={styles.mainTitle}>
           <h1 className={styles.title}>Создание героя</h1>
         </div>
       </div>
       <h2 className={styles.title}>Представтесь</h2>
-      <input className={styles.inputName} type="text" name="" id="" />
+      <InputNameContainer />
       <h1 className={styles.title}>Выберите три стихии</h1>
       <ChooseElementContainer />
       <h1 className={styles.title}>Выберите пять форм</h1>

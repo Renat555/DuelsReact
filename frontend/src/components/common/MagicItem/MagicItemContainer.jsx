@@ -3,8 +3,8 @@ import MagicItem from "./MagicItem";
 
 let mapStateToProps = (state) => {
   return {
-    choosenElements: state.elements.choosenElements,
-    choosenForms: state.forms.choosenForms,
+    choosenElements: state.createGame.choosenElements,
+    choosenForms: state.createGame.choosenForms,
   };
 };
 

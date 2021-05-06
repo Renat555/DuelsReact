@@ -1,11 +1,11 @@
 import ChooseForm from "./ChooseForm";
 import { connect } from "react-redux";
-import { addForm, deleteForm } from "../../../redux/chooseFormsReducer";
+import { addForm, deleteForm } from "../../../redux/createGameReducer";
 
 let mapStateToProps = (state) => {
   return {
-    forms: state.forms.forms,
-    choosenForms: state.forms.choosenForms,
+    forms: state.createGame.forms,
+    choosenForms: state.createGame.choosenForms,
   };
 };
 

@@ -1,14 +1,11 @@
 import ChooseElement from "./ChooseElement";
 import { connect } from "react-redux";
-import {
-  addElement,
-  deleteElement,
-} from "../../../redux/chooseElementsReducer";
+import { addElement, deleteElement } from "../../../redux/createGameReducer";
 
 let mapStateToProps = (state) => {
   return {
-    elements: state.elements.elements,
-    choosenElements: state.elements.choosenElements,
+    elements: state.createGame.elements,
+    choosenElements: state.createGame.choosenElements,
   };
 };
 

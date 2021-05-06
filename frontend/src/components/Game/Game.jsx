@@ -1,4 +1,4 @@
-const Game = () => {
+const Game = (props) => {
   return <div></div>;
 };
 

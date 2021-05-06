@@ -1,17 +1,16 @@
 import { combineReducers, createStore } from "redux";
-import chooseElementReducer from "./chooseElementsReducer";
-import chooseFormsReducer from "./chooseFormsReducer";
+import createGameReducer from "./createGameReducer";
+import gameReducer from "./gameReducer";
 
 let reducers = combineReducers({
-  elements: chooseElementReducer,
-  forms: chooseFormsReducer,
+  createGame: createGameReducer,
+  game: gameReducer,
 });
 
 const store = createStore(reducers);
 
-function showChange() {
-  console.log(store.getState().elements.isElementsEnough);
-  console.log(store.getState().forms.isFormsEnough);
+export function showChange() {
+  console.log(store.getState().game);
 }
 
 store.subscribe(showChange);

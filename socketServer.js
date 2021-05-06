@@ -15,7 +15,7 @@ const isDev = process.env.NODE_ENV === "development";
 let urlMongo;
 
 if (isDev) {
-  urlMongo = "mongodb://a00.kz:27017/duelsdb";
+  urlMongo = "mongodb://duelsreact:27017/duelsdb";
 } else {
   urlMongo = "mongodb://Renat:muzuf@localhost:27017/duelsdb";
 }
@@ -23,7 +23,7 @@ if (isDev) {
 const mongoClient = new MongoClient(urlMongo, {
   useUnifiedTopology: true,
 });
-const wss = new WebSocket.Server({ port: 3000, clientTracking: true });
+const wss = new WebSocket.Server({ port: 3001, clientTracking: true });
 
 mongoClient.connect(function (err, client) {
   const db = client.db("duelsdb");
@@ -32,6 +32,8 @@ mongoClient.connect(function (err, client) {
   wss.on("connection", function connection(ws) {
     ws.on("message", function (message) {
       let request = JSON.parse(message);
+      console.log("new message");
+      console.log(request);
 
       if (request["header"] == "createGame") {
         if (request["user"]["enemyType"] == "human") {
