@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router";
+import Authorization from "./components/Authorization/Authorization";
 import CreateGame from "./components/CreateGame/CreateGame";
 import Game from "./components/Game/Game";
 import GameLoadingContainer from "./components/GameLoading/GameLoadingContainer";
@@ -33,6 +34,9 @@ const App = (props) => {
         </Route>
         <Route path="/help">
           <Help />
+        </Route>
+        <Route path="/auth">
+          <Authorization />
         </Route>
         <Route path="/loading">
           <GameLoadingContainer ws={ws} />

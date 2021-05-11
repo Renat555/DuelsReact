@@ -1,0 +1,17 @@
+.fon {
+  background-image: url(../../img/createHero/fon.jpg);
+  background-size: cover;
+  min-height: 100vh;
+
+  display: grid;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-items: center;
+}
+
+.form {
+}

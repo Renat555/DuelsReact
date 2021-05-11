@@ -1,6 +1,6 @@
 .fon {
   background-image: url(../../img/createHero/fon.jpg);
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
 }
 
@@ -11,7 +11,7 @@
   align-items: center;
   justify-items: center;
 
-  grid-template-areas: ". reference mainTitle .";
+  grid-template-areas: ". referenceToHelp mainTitle referenceToAuthorization .";
 }
 
 .mainTitle {
@@ -23,8 +23,12 @@
   text-align: center;
 }
 
-.referenceContainer {
-  grid-area: reference;
+.referenceToHelp {
+  grid-area: referenceToHelp;
+}
+
+.referenceToAuthorization {
+  grid-area: referenceToAuthorization;
 }
 
 .buttonToHelp {
@@ -35,6 +39,7 @@
   color: black;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .buttons {
@@ -50,7 +55,7 @@
   }
   .header {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "reference mainTitle .";
+    grid-template-areas: "referenceToHelp mainTitle referenceToAuthorization";
   }
 }
 
@@ -59,7 +64,8 @@
     grid-template-columns: 1fr;
     grid-template-areas:
       "mainTitle"
-      "reference";
+      "referenceToHelp"
+      "referenceToAuthorization";
   }
   .reference {
     padding: 5px;
