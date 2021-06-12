@@ -1,13 +1,13 @@
 import { connect } from "react-redux";
-import { setName } from "../../../redux/createGameReducer";
+import { addName } from "../../../redux/gameReducer";
 import InputName from "./InputName";
 
 let mapStateToProps = (state) => {
   return {
-    name: state.createGame.name,
+    name: state.game.user.name,
   };
 };
 
-const InputNameContainer = connect(mapStateToProps, { setName })(InputName);
+const InputNameContainer = connect(mapStateToProps, { addName })(InputName);
 
 export default InputNameContainer;

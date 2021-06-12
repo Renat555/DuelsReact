@@ -15,7 +15,7 @@ const isDev = process.env.NODE_ENV === "development";
 let urlMongo;
 
 if (isDev) {
-  urlMongo = "mongodb://duelsreact:27017/duelsdb";
+  urlMongo = "mongodb://127.0.0.1:27017/duelsdb";
 } else {
   urlMongo = "mongodb://Renat:muzuf@localhost:27017/duelsdb";
 }

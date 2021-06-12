@@ -2,7 +2,7 @@ import styles from "./InputName.module.css";
 
 const InputName = (props) => {
   function handleChange(event) {
-    props.setName(event.currentTarget.value);
+    props.addName(event.currentTarget.value);
   }
 
   return (

@@ -1,16 +1,17 @@
-import { combineReducers, createStore } from "redux";
-import createGameReducer from "./createGameReducer";
+import { applyMiddleware, combineReducers, createStore } from "redux";
+import thunk from "redux-thunk";
 import gameReducer from "./gameReducer";
+import profileReducer from "./profileReducer";
 
 let reducers = combineReducers({
-  createGame: createGameReducer,
   game: gameReducer,
+  profile: profileReducer,
 });
 
-const store = createStore(reducers);
+const store = createStore(reducers, applyMiddleware(thunk));
 
 export function showChange() {
-  console.log(store.getState().game);
+  console.log(store.getState());
 }
 
 store.subscribe(showChange);

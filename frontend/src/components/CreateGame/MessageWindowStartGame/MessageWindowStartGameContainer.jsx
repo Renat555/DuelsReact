@@ -2,13 +2,13 @@ import { connect } from "react-redux";
 import {
   isElementsEnoughToggle,
   isFormsEnoughToggle,
-} from "../../../redux/createGameReducer";
+} from "../../../redux/gameReducer";
 import MessageWindowStartGame from "./MessageWindowStartGame";
 
 let mapStateToProps = (state) => {
   return {
-    isElementsEnough: state.createGame.isElementsEnough,
-    isFormsEnough: state.createGame.isFormsEnough,
+    isElementsEnough: state.game.isElementsEnough,
+    isFormsEnough: state.game.isFormsEnough,
   };
 };
 

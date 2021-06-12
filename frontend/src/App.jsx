@@ -4,10 +4,11 @@ import CreateGame from "./components/CreateGame/CreateGame";
 import Game from "./components/Game/Game";
 import GameLoadingContainer from "./components/GameLoading/GameLoadingContainer";
 import Help from "./components/Help/Help";
+import RegistrationContainer from "./components/Registration/RegistrationContainer";
 import { addPlayers } from "./redux/gameReducer";
 import store from "./redux/reduxStore";
 
-const ws = new WebSocket("ws://a00.kz:3001");
+const ws = new WebSocket("ws://localhost:3001");
 
 ws.onmessage = (message) => {
   message = JSON.parse(message.data);
@@ -37,6 +38,9 @@ const App = (props) => {
         </Route>
         <Route path="/auth">
           <Authorization />
+        </Route>
+        <Route path="/reg">
+          <RegistrationContainer />
         </Route>
         <Route path="/loading">
           <GameLoadingContainer ws={ws} />

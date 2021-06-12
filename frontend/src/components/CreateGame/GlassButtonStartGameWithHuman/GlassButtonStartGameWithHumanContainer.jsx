@@ -3,13 +3,13 @@ import {
   isElementsEnoughToggle,
   isFormsEnoughToggle,
   setEnemyType,
-} from "../../../redux/createGameReducer";
+} from "../../../redux/gameReducer";
 import GlassButtonStartGameWithHuman from "./GlassButtonStartGameWithHuman";
 
 let mapStateToProps = (state) => {
   return {
-    choosenElements: state.createGame.choosenElements,
-    choosenForms: state.createGame.choosenForms,
+    choosenElements: state.game.user.elements,
+    choosenForms: state.game.user.forms,
   };
 };
 
